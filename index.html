@@ -15,6 +15,8 @@
       line-height: 1.6;
     }
 
+    /* ================= HEADER ================= */
+
     header {
       min-height: 100vh;
       background: url("hero.jpg") center / cover no-repeat;
@@ -25,17 +27,29 @@
       padding: 2rem;
     }
 
+    .hero-box {
+      background: rgba(0, 0, 0, 0.6);   /* smoked glass */
+      padding: 2.5rem 3rem;
+      border-radius: 10px;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      max-width: 800px;
+    }
+
     header h1 {
       font-size: clamp(2.5rem, 6vw, 4rem);
-      margin-bottom: 0.5rem;
+      margin: 0 0 0.5rem 0;
       letter-spacing: 0.08em;
     }
 
     header p {
-      max-width: 700px;
+      margin: 0;
       font-size: 1.1rem;
-      opacity: 0.9;
+      opacity: 0.95;
     }
+
+    /* ================= NAV ================= */
 
     nav {
       position: sticky;
@@ -66,6 +80,8 @@
       color: #ff3b2f;
     }
 
+    /* ================= SECTIONS ================= */
+
     section {
       max-width: 1100px;
       margin: auto;
@@ -91,6 +107,8 @@
       border-radius: 8px;
     }
 
+    /* ================= FOOTER ================= */
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -103,11 +121,11 @@
 <body>
 
 <header>
-  <div>
-    <h1>EJ - Uniquely Usable </h1>
+  <div class="hero-box">
+    <h1>EJ – Uniquely Usable</h1>
     <p>
-             Built, Restored, Improved . . . <br/>
-                      Modernised for Driving
+      Built, Restored, Improved . . .<br/>
+      Modernised for Driving
     </p>
   </div>
 </header>
@@ -127,78 +145,90 @@
 <section id="about">
   <h2>About EJ</h2>
   <p>
-    "EJ" is a 1970 Mustang retains the soul of a
-    classic Mustang, whilst making it a usable daily driver.<br/><br/>
-
+    “EJ” is a 1970 Mustang that retains the soul of a classic Mustang, whilst
+    making it a usable daily driver.
   </p>
+
   <p>
     If it looks original, that’s deliberate . . .<br/>
-    but every single detail has been carefully designed to enhance its driveability.
+    but every single detail has been carefully designed to enhance its drivability.
   </p>
 
   <p>
-    The build had just three rules: <br/>
-1/  The original chassis was to be 100% unmodified<br/>
-2/  Every part had to enhance the driving experience <br/>
-3/  Every part had to be designed, built and installed by the owner - including paint, electronics and mechanics.<br/>
+    The build followed three simple rules:<br/>
+    1/ The original chassis was to be 100% unmodified<br/>
+    2/ Every part had to enhance the driving experience<br/>
+    3/ Every part had to be designed, built and installed by the owner — including
+    paint, electronics and mechanics.
   </p>
 </section>
 
 <section id="engine">
-  <h2>Engine:</h2>
+  <h2>Engine</h2>
   <div class="grid">
     <div class="card">
-      <h3>Engine:</h3>
-      <p>Ford 5.0/302 V8 - Trick Flow Heads & Intake, Vortech V2 Supercharger - ~500 hp </p>
-    </div>
-    <div class="card">
-      <h3>Fuel & Ignition:</h3>
+      <h3>Engine</h3>
       <p>
-        Custom Built Standalone EFI ECU & Loom, owner designed, built and tuned.
+        Ford 5.0 / 302 V8 with Trick Flow heads and intake, Vortech V2 supercharger.
+        Approx. 500 hp.
       </p>
     </div>
+
     <div class="card">
-      <h3>Cooling:</h3>
-      <p>ECU controlled custom engine & transmission cooling system</p>
+      <h3>Fuel & Ignition</h3>
+      <p>
+        Custom-built standalone EFI ECU and loom. Designed, built and tuned by the
+        owner.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Cooling</h3>
+      <p>
+        ECU-controlled custom engine and transmission cooling system.
+      </p>
     </div>
   </div>
 </section>
 
 <section id="drivetrain">
-  <h2>Drivetrain:</h2>
+  <h2>Drivetrain</h2>
   <p>
-    4.54:1 drag gearing with Overdrive Automatic for effortless motorway cruising
+    4.54:1 drag gearing paired with an overdrive automatic for effortless motorway
+    cruising.
   </p>
 </section>
 
 <section id="chassis">
-  <h2>Chassis & Suspension:</h2>
+  <h2>Chassis & Suspension</h2>
   <p>
-    CAD designed front and rear subframes - mounted using all original fixing locations, riding on high performance 
-oem suspension components for unrivaled ride and comfort without sacrifice
+    CAD-designed front and rear subframes mounted exclusively using original fixing
+    locations. High-performance OEM suspension components provide exceptional ride
+    and comfort without compromise.
   </p>
 </section>
 
 <section id="interior">
   <h2>Interior</h2>
   <p>
-    Largely original in appearance, quietly modern underneath. Accurate fully digital controlled gauges,
-    modern comforts (electric & heated seats, electric mirrors and more ...
+    Largely original in appearance, quietly modern underneath. Fully digitally
+    controlled gauges and modern comforts including electric and heated seats,
+    electric mirrors and more.
   </p>
 </section>
 
 <section id="electronics">
-  <h2>Custom Electronics:</h2>
+  <h2>Custom Electronics</h2>
   <p>
     Bespoke electronics architecture using modern microcontrollers. Analogue
-    appearance, digital brains.
+    appearance, digital brains — no unnecessary screens.
   </p>
 </section>
 
 <section id="gallery">
   <h2>Gallery</h2>
   <p>
-    A selection of images showing EJ during the design and build.
+    A selection of images showing EJ during the design and build process.
   </p>
 </section>
 
