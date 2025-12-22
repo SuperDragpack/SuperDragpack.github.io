@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EJ – 1970 Mustang</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e6e6e6;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background: url("hero.jpg") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.08em;
+    }
+
+    header p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      border-bottom: 1px solid #222;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0.75rem 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e6e6e6;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    nav a:hover {
+      color: #ff3b2f;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+      border-bottom: 1px solid #222;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #151515;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>EJ</h1>
+    <p>
+      1970 Ford Mustang<br />
+      Built to be driven. Improved with intent. Never finished.
+    </p>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#engine">Engine</a></li>
+    <li><a href="#drivetrain">Drivetrain</a></li>
+    <li><a href="#chassis">Chassis</a></li>
+    <li><a href="#interior">Interior</a></li>
+    <li><a href="#electronics">Electronics</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h2>About EJ</h2>
+  <p>
+    EJ is a 1970 Mustang restomod built with a simple brief: retain the soul of a
+    classic Mustang, while quietly fixing the bits Ford hadn’t worked out yet.
+    It is not a restoration, and it is not a trailer ornament.
+  </p>
+  <p>
+    The approach throughout is OEM-plus. If it looks original, that’s deliberate.
+    If it works better than original, that’s also deliberate.
+  </p>
+</section>
+
+<section id="engine">
+  <h2>Engine</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Base</h3>
+      <p>Ford small-block V8, Fox-body based 5.0-litre architecture.</p>
+    </div>
+    <div class="card">
+      <h3>Fuel & Ignition</h3>
+      <p>
+        Modern electronic fuel injection and mapped ignition for reliability and
+        drivability.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Management</h3>
+      <p>Speeduino standalone ECU, DIY built and tuned.</p>
+    </div>
+  </div>
+</section>
+
+<section id="drivetrain">
+  <h2>Drivetrain</h2>
+  <p>
+    Chosen for strength, availability and real-world usability rather than
+    headline numbers. Built to cope with torque, miles and misuse.
+  </p>
+</section>
+
+<section id="chassis">
+  <h2>Chassis & Suspension</h2>
+  <p>
+    Updated suspension geometry and components improve control without changing
+    the character of the car. Electric power steering is speed-sensitive and
+    tuned for feel, not novelty.
+  </p>
+</section>
+
+<section id="interior">
+  <h2>Interior</h2>
+  <p>
+    Largely original in appearance, quietly modern underneath. Accurate gauges,
+    sensible ergonomics and everything works — on purpose.
+  </p>
+</section>
+
+<section id="electronics">
+  <h2>Custom Electronics</h2>
+  <p>
+    Bespoke electronics architecture using modern microcontrollers. Analogue
+    hardware, digital brains, no unnecessary screens.
+  </p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p>
+    A selection of images showing EJ as built, driven and occasionally taken
+    apart.
+  </p>
+</section>
+
+<footer>
+  <p>1970 Ford Mustang EJ • Built to be used</p>
+</footer>
+
+</body>
+</html>
