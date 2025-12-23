@@ -28,7 +28,7 @@
     }
 
     .hero-box {
-      background: rgba(0, 0, 0, 0.6);   /* smoked glass */
+      background: rgba(0, 0, 0, 0.6);
       padding: 2.5rem 3rem;
       border-radius: 10px;
       backdrop-filter: blur(6px);
@@ -105,6 +105,23 @@
       background: #151515;
       padding: 1.5rem;
       border-radius: 8px;
+    }
+
+    /* ================= GALLERY ================= */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #111;
     }
 
     /* ================= FOOTER ================= */
@@ -233,7 +250,6 @@ Custom designed, built and programmed microcontrollers within bespoke ECU's prov
 Various ECU's monitor and control a full array of features to give the driver full details
 of the health of the vehicle plus unique comforts including full electric memory seats with heaters, custom dash lighting, tunable dash 
 controls of the ePAS at pre-set speeds, engine cooling programs and more.
-
   </p>
 </section>
 
@@ -242,6 +258,19 @@ controls of the ePAS at pre-set speeds, engine cooling programs and more.
   <p>
     A selection of images showing EJ during the design and build process.
   </p>
+
+  <div class="gallery-grid">
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <img src="5.jpg" alt="">
+    <img src="6.jpg" alt="">
+    <img src="7.jpg" alt="">
+    <img src="8.jpg" alt="">
+    <img src="9.jpg" alt="">
+    <img src="10.jpg" alt="">
+  </div>
 </section>
 
 <footer>
